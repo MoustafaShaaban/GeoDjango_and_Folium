@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Homepage{% endblock title %}
+
+{% block homepage %}
+<div class="list-group">
+    <a href="{% url 'simple-markers' %}" class="list-group-item list-group-item-action active" aria-current="true">
+        Folium Simple Markers example
+    </a>
+    <a href="{% url 'marker-cluster' %}" class="list-group-item list-group-item-action">Marker Cluster using Folium</a>
+</div>
+{% endblock homepage %}
